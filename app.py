@@ -1,3 +1,5 @@
+import subprocess
+
 print('''
 
 ░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
@@ -19,6 +21,10 @@ opcao_escolhida = int(input('Escolha uma opção: '))
 # print(type(opcao_escolhida))
 # print(type(1))  #metodo de ver o tipo do valor
 
+def finalizar_app():
+    subprocess.run('cls', shell=True)
+    print('Finalizando o app\n')
+
 if opcao_escolhida == 1:
     print('Cadastrar restaurante')
 elif opcao_escolhida == 2:
@@ -26,4 +32,4 @@ elif opcao_escolhida == 2:
 elif opcao_escolhida == 3:
     print('Ativar restaurante')
 else:
-    print('Encerrando o programa')
+    finalizar_app()
