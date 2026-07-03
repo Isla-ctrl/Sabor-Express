@@ -1,6 +1,8 @@
 import subprocess
 
-restaurantes = ['Pizza', 'Sushi']
+restaurantes = [{'nome' : 'Praça', 'categoria' : 'Japonesa', 'ativo' : False}, 
+                {'nome' : 'Pizza seprema', 'categoria' : 'Italiana', 'ativo' : True},
+                {'nome' : 'Feijoada', 'categoria' : 'Brasileira', 'ativo' : False}]
 
 def exibir_nome_do_programa():
     print('''
@@ -46,7 +48,9 @@ def listar_restaurantes():
     exibir_subtitulo('Listando os restaurantes')
 
     for restaurante in restaurantes:
-        print(f'.{restaurante}')
+        nome_restaurante = restaurante['nome']
+        categoria = restaurante['categoria']
+        print(f'- {nome_restaurante} | {categoria}')
 
     reiniciar()
 
