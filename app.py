@@ -13,11 +13,14 @@ print('2. Listar restaurante')
 print('3. Ativar restaurante')
 print('4. sair\n')
 
-opcao_escolhida = input('Escolha uma opção: ')
-print(f'Você escolheu a opção {opcao_escolhida}!')
+opcao_escolhida = int(input('Escolha uma opção: '))
+
+# print(opcao_escolhida == 1)
+# print(type(opcao_escolhida))
+# print(type(1))  #metodo de ver o tipo do valor
 
 if opcao_escolhida == 1:
-    print('cadastrar restaurante')
+    print('Cadastrar restaurante')
 elif opcao_escolhida == 2:
     print('Listar restaurante')
 elif opcao_escolhida == 3:
