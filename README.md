@@ -12,10 +12,10 @@ O app simula um painel simples de administração: cadastra restaurantes, lista 
 
 ## 🎯 Funcionalidades
 
-- **Cadastrar restaurante** — registra nome e categoria, com status inicial `inativo`.
-- **Listar restaurantes** — exibe uma tabela formatada com nome, categoria e status (ativado/desativado).
-- **Alternar estado do restaurante** — busca por nome e inverte o status entre ativo/inativo.
-- **Sair do app** — encerra o programa com uma mensagem de finalização.
+- **Cadastrar restaurante** - registra nome e categoria, com status inicial `inativo`.
+- **Listar restaurantes** - exibe uma tabela formatada com nome, categoria e status (ativado/desativado).
+- **Alternar estado do restaurante** - busca por nome e inverte o status entre ativo/inativo.
+- **Sair do app** - encerra o programa com uma mensagem de finalização.
 - Validação de opções inválidas, com tratamento de erros via `try/except`.
 - Menu que se reinicia automaticamente após cada ação, sem precisar rodar o script de novo.
 
@@ -48,5 +48,7 @@ Esse projeto foi minha porta de entrada na lógica de programação com Python. 
 ## 👩‍💻 Autora
 
 Desenvolvido por **Isla** durante meus estudos de Python.
+
+> O mais importante foi me desafiar a estruturar o código antes de ver a resolução dos instrutores, mesmo que isso torne meus estudos mais longos. Mas o mais importante para mim é desenvolver uma base sólida e futuramente ser capaz de sustentar cada conhecimento. **Não é preciso decorar tudo, mas sim, saber pesquisar e ter a paciência de pensar na resolução do problema.**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Isla--ctrl-181717?style=for-the-badge&logo=github)](https://github.com/Isla-ctrl)
