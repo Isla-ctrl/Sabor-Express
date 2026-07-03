@@ -1,6 +1,6 @@
 import subprocess
 
-restaurantes = []
+restaurantes = ['Pizza', 'Sushi']
 
 def exibir_nome_do_programa():
     print('''
@@ -24,7 +24,7 @@ def finalizar_app():
     print('Finalizando o app')
 
 def reiniciar():
-    input('Digite uma tecla para voltar ao menu principal')
+    input('\nDigite uma tecla para voltar ao menu principal ')
     main()
 
 def opcao_invalida():
@@ -39,6 +39,15 @@ def cadastrar_novo_restaurante():
     print(f'O restaurante {nome_do_restaurante} foi cadastrado com sucesso!')
     reiniciar()
 
+def listar_restaurantes():
+    subprocess.run('cls', shell=True)
+    print('Listando os restaurantes\n')
+
+    for restaurante in restaurantes:
+        print(f'.{restaurante}')
+
+    reiniciar()
+
 def escolher_opcao():
     try:
         opcao_escolhida = int(input('Escolha uma opção: '))
@@ -46,7 +55,7 @@ def escolher_opcao():
         if opcao_escolhida == 1:
             cadastrar_novo_restaurante()
         elif opcao_escolhida == 2:
-            print('Listar restaurante')
+            listar_restaurantes()
         elif opcao_escolhida == 3:
             print('Ativar restaurante')
         elif opcao_escolhida == 4:
