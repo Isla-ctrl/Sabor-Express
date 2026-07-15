@@ -8,8 +8,8 @@ Sistema de cadastro e gerenciamento de restaurantes, desenvolvido em Python dura
 
 Este repositório reúne **duas versões do mesmo projeto**, feitas em momentos diferentes do curso:
 
-- **`logica-de-programacao`** → primeira versão, construída com lógica de programação básica (funções, listas de dicionários, laços, condicionais).
-- **`orientacao-a-objetos`** → mesmo projeto reconstruído do zero aplicando Programação Orientada a Objetos, avançando depois para consumo e criação de APIs.
+- **`lógica de programação`** → primeira versão, construída com lógica de programação básica (funções, listas de dicionários, laços, condicionais).
+- **`orientção a objetos`** → mesmo projeto reconstruído do zero aplicando Programação Orientada a Objetos, avançando depois para consumo e criação de APIs.
 
 A ideia de manter as duas pastas no mesmo repositório é justamente deixar visível a evolução: o mesmo problema (gerenciar restaurantes) resolvido com abordagens diferentes, conforme fui avançando no curso.
 
