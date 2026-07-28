@@ -53,7 +53,8 @@ class Restaurante: ## classe de um objeto (molde)
         print(f'Cardápio do restaurante {self._nome}\n')
         ## Aqui estou usando o enumerate para enumerar os itens do cardápio, começando do 1. O enumerate retorna uma tupla com o índice e o item, que eu descompacto em i e item.
         for i,item in enumerate (self._cardapio, start=1):
-            
+
+            ## Aqui estou usando o hasattr para verificar se o item tem o atributo _descricao, e se ele tem, eu exibo a mensagem do prato, caso contrário, eu exibo a mensagem da bebida.
             if hasattr(item, '_descricao') and item._descricao:
                 mensagem_prato = f'{i}. Nome:{item._nome} | Preço: R${item._preco} | Descrição: {item._descricao}'
                 print(mensagem_prato)
